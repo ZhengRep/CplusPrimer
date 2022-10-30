@@ -2,7 +2,8 @@
 
 int main()
 {
-	std::clog << "HelloWorld\n";
-	std::cerr << "Error!";
+	int a, b;
+	std::cin >> a >> b;
+	std::cout << "a = " << a << ",b = " << b << std::endl;
 	return 0;
 }
