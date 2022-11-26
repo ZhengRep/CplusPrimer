@@ -31,12 +31,12 @@ int main()
 		statement
 	*/
 
-	string str("Some String!");
-	for (auto c : str) {
-	//for(char c : str){
-		c = toupper(c);
-	}
-	cout << str << endl;
+	//string str("Some String!");
+	//for (auto &c : str) {
+	////for(char c : str){
+	//	c = toupper(c);
+	//}
+	//cout << str << endl;
 
 	/*
 	char c;
@@ -53,7 +53,28 @@ int main()
 	toupper(c);
 	*/
 
+	/*
+	string s1; //default initialization, s1 is the empty string
+	string s2(s1); //s2 is a copy of s1
+	string s2 = s1; //s2 is a copy of s1
+	string s3 = "value"; //s3 is a copy of string literal
+	string s3("value");
+	string s4(n, 'c'); //Initialize s4 with n copies of the character 'c'
+	*/
 
+	/*const string hexdigits = "0123456789ABCDEF";
+	cout << "Enter a series of numbers between 0 and 15" << "separated by spaces. Hit ENTER when finished: " << endl;
+	string result;
+	string::size_type n;
+	while (cin >> n) {
+		if (n < hexdigits.size()) {
+			result += hexdigits[n];
+		}
+	}
+	cout << "Your hex number is:" << result << endl;*/
+
+	string s1(4, 'H');
+	cout << s1 << endl;
 
 	return 0;
 }
